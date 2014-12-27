@@ -26,10 +26,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/du/config/common.mk)
-
-# Pull in APNs
-$(call inherit-product, vendor/du/config/gsm.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 
 # Inherit from moto_msm8960 device
 $(call inherit-product, device/motorola/moto_msm8960/device_moto_msm8960.mk)
